@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"  th:href="@{/css/index.css}">
+<title>login page</title>
+</head>
+<body >
+	<section>
+        <div class="form-box">
+            <div class="form-value">
+				<!-- Check if "success" flash attribute is present -->
+                <div th:if="${success != null}" class="success">
+                    <p th:text="${success}"></p>
+                </div>
+                <form action="/validate" method="post">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <input type="email" required name="email">
+                        <label for="">Email</label>
+                    </div>  
+                    <div class="inputbox">
+                        
+                        <input type="password" required name="password">
+                        <label for="">Password</label>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button>Log in</button>
+                    <div class="register">
+                        <p>Don't have a account? <a href="/register">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</section>
+</body>
+</html>

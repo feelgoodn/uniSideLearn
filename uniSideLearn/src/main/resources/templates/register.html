@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"  th:href="@{/css/style.css}">
+<title>registrtion page</title>
+</head>
+<body>
+	
+	
+  <!-- Check if "success" flash attribute is present -->
+    <div th:if="${success != null}" class="success">
+       <p th:text="${success}"></p>
+      </div>
+
+    <form action="/addUser" method="post">
+		
+        <h1>Register Today! &#9997;</h1>
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" required minlength="3" placeholder=" First name"><br>
+        	
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" required minlength="3" placeholder=" Last name"><br>
+       
+        <label for="number">Phone Number</label>
+        <input type="text" name="number"  placeholder="Enter Number" ><br>
+        
+
+        <label for="email">Email</label>
+        <input type="email" name="email" required placeholder=" Email"><br>
+        
+ 
+        <label for="password">Password</label>
+        <input type="password" name="password" required  placeholder="Password"><br>
+        
+        <label for="confirmpassword">Confirm Password</label>
+        <input type="password" name="confirmpassword" required placeholder="Password"><br>
+       
+         
+         <label for="role">Role
+         <input type="radio" name="role" value="trainer">Trainer
+         <input type="radio" name="role" value="student">Student
+         </label>
+         <br>
+         <br>
+         
+        <input type="submit" value="Register">
+       
+        
+        <div class="form-link">
+	   <span>Already have a Account? </span>
+	   <a href="/login">Login</a>
+       </div>
+       
+    </form>
+</body>
+</html>

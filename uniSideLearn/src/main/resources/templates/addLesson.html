@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>add Lesson</title>
+<link rel="stylesheet"  th:href="@{/css/add.css}">
+</head>
+<body>
+
+<section>
+	<div class="form-box">
+            <div class="form-value">
+           <form action="/addLesson" method="post">
+                    <h2>Add a New Lesson!</h2>
+                    <div class="inputbox">
+                              <input type="number" required name="courseId">
+                        <label for="">Course ID</label>
+                    </div>  
+                    <div class="inputbox">
+                        <input type="number" required name="lessonId">
+                        <label for="">Lesson ID</label>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <input type="lesson name" required name="lessonname">
+                        <label for="">Lesson Name</label>
+                    </div>
+                     <div class="inputbox">
+                        <input type="lessontopics" required name="lessontopics">
+                        <label for="">Lesson Topic</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="lessonlink" required name="lessonlink">
+                        <label for="">Video Link</label>
+                    </div>
+                    <button>Add Lesson</button>
+                    </form>
+                       </div>
+                 </div>
+      </section>
+
+</body>
+</html>

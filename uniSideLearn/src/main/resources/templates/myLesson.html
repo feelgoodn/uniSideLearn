@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>&#8802 My lessons</title>
+<link rel="stylesheet"  th:href="@{/css/myLesson.css}">
+</head>
+<body>
+	<header>
+	<div class="logo">
+	  <img src="image/logo.jpeg" alt="logo">
+		</div>
+		   <nav>
+			   <ul>
+				   <li><a href="/home">Home</a></li>
+				   <li><a href="/purchase">Buy Course</a></li>
+				   <li><a href="/myCourses">My Course</a></li>
+				   <li><a href="#">Contact</a></li>	   
+				</ul>
+		   </nav>   
+		   <button><a href="/login">Logout</a></button>
+    </div>
+    </header>
+	
+     <div class="table-container">
+     <h1 class="heading">Lesson Details &#128203</h1>
+       <table class="tabo">
+	     <tr>
+		    <th>Lesson ID</th>
+		    <th>Lesson Name</th>
+		    <th>Lesson Topics</th>
+		     <th>Video Link</th>
+		     <th>Course Id</th>        
+	   </tr>
+	   <tbody class="table">
+		  <tr>
+			  
+		  <td th:text="${lesson.lessonId}"></td>
+		   <td th:text="${lesson.lessonname}"></td> 
+		    <td th:text="${lesson.topics}"></td>
+		     <td>
+				 <a id="hh" href="https://www.youtube.com/watch?v=9RCuKrze_-k&t=7s" th:text="${lesson.link}"></td> 
+		         </a>
+		      <td th:text="${lesson.course}"></td>   
+		  </tr>
+	  </tbody>
+   </table>
+   
+    <div class="container">
+	   <iframe width="100%" height="100%" th:src="${lesson.link}"
+	    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+	    allowfullscreen></iframe>  
+   </div>
+   
+   
+   <div class="comment1">
+	   <h2 id="hk">Leave A Comment Here &#128071;</h2>
+	   <form action="/addComment" method="post">
+	   <textarea class="area" required name="comment"></textarea>
+	   <br>
+       <input class="add" type="submit" value="Add Comment">
+	   </form>
+   </div>
+   
+  
+</body>
+</html>

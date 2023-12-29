@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>lessons</title>
+<link rel="stylesheet"  th:href="@{/css/demo.css}">
+</head>
+<body>
+	<!-- Check if "success" flash attribute is present -->
+    <div th:if="${success != null}" class="success">
+       <p th:text="${success}"></p>
+      </div>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+      <form action="/goToLesson" method="post">
+	       <h2>Enter Lesson ID</h2>
+             <div class="inputbox">
+                  <input type="text" required name="lessonId">
+                   <label for="">Lesson ID</label>
+                   </div> 
+                <button>Start</button> 
+           </div>
+        </div>
+	</section>
+	
+</form>
+
+</body>
+</html>

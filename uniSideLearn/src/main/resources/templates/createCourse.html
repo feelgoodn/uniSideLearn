@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>create course</title>
+<link rel="stylesheet"  th:href="@{/css/create.css}">
+</head>
+<body>
+	<!-- Check if "success" flash attribute is present -->
+    <div th:if="${success != null}" class="success">
+       <p th:text="${success}"></p>
+      </div>
+<section>
+	<div class="form-box">
+           <div class="form-value">
+           <form action="/addCourse" method="post">
+                    <h2>Create a New Course!</h2>
+                    <div class="inputbox">
+                              <input type="number" required name="courseId">
+                        <label for="">Course ID</label>
+                    </div>  
+                    <div class="inputbox">
+                        <input type="course name" required name="coursename">
+                        <label for="">Course Name</label>
+                    </div>
+                    
+                    <div class="inputbox">
+                        <input type="couese price" required name="courseprice">
+                        <label for="">Course Price</label>
+                    </div>
+                    <button>Create</button>
+                    </form>
+                    </div>
+                    </div>
+      </section>
+</body>
+</html>

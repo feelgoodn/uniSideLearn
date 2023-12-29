@@ -1,0 +1,153 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family:'poppins',sans-serif ;
+	text-decoration: none	;
+	box-sizing: border-box;
+}
+
+.table-container {
+	padding: 0 20%;
+	margin: 40px auto 0;
+}
+
+.table-container .container {
+	width: 500px;
+	height: 281px;
+	margin-left: 200px;
+	
+}
+
+
+
+#hh{
+	color: rgb(22, 103, 254);
+}
+
+
+
+.heading {
+	font-size: 40px;
+	text-align: center;
+	color: rgb(128, 0, 64);
+	margin-bottom: 50px;
+}
+
+header{
+	width: 100%;
+	height: 125px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px;
+	background-color:  rgb(170, 237, 148);
+}
+
+.logo {
+	height: 90px;
+	width: 80px;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.logo img { 
+	width: 180%; 
+	}
+	
+nav li{
+	display: inline-block;
+	margin-left: 80px;
+	border: 0.5px solid rgb(0, 128, 192);
+	border-radius: 2px;
+	text-decoration: none;
+	list-style: none;
+	padding: 7px 10px;
+    cursor: pointer;
+    font-weight: 500;  
+}
+
+
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+
+.tabo  th {
+	font-size: 15px;
+	font-weight: 600;
+	width: 18%;
+	letter-spacing: 0.35px;
+	background-color: darkgoldenrod;
+	opacity: 1;
+	padding: 15px;
+	vertical-align: top;
+	border: 2px solid #dee2e685;
+}
+
+
+tbody  td {
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	font-weight: normal;
+	background-color: #3c3f44;
+	color: #f1f1f1;
+	padding: 15px;
+	text-align: center;
+	border: 1px solid #dee2e685;
+}
+
+
+.tabo {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+h2{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	
+	
+}
+
+.comment1{
+	text-align: center;
+	
+}
+
+.add {
+	text-align: center;
+	margin-top: 10px;
+	width: 20%;
+    height: 40px;
+    border-radius: 8px;
+    background: rgb(255, 0, 0);
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.area {
+	width: 50%;
+	border: 2px solid rgb(128, 0, 64);
+	
+}
+
+
+
+
+	
+
+
+
+
+
+
