@@ -69,19 +69,19 @@ nav li{
 	width: 50%;
 	height: 70vh;
 	border-radius: 20px;
-	background-attachment: scroll;
 	background-position: center;
 	float: right;
 }
 
 
-.hero .section-text { margin-bottom: 50px;
-margin-top: 10px;
-width: 200%;
+.section-text { margin-bottom: 45px;
+margin-top: 50px;
+width: 100%;
 font-size: medium;
+word-spacing: 3px;
 margin-left: 20px;
 text-align: left;
- }
+}
  
  .form-box1
  {
@@ -133,9 +133,7 @@ text-align: left;
 
 
 
-
-
-.about-img { width: 100%;
+.about-img { width: 95%;
     margin-top: 200px;
     margin-right: 80%;
  
@@ -146,8 +144,11 @@ text-align: left;
         
    }
 
-.about .section-text { margin-bottom: 50px; 
-
+.section-text { margin-bottom: 45px; 
+ width: 100%;
+ font-weight: 300;
+ 
+ 
 }
 
 
