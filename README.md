@@ -1,4 +1,4 @@
-# uniSideLearn
+# uniSideLearnDemo
 
 uniSideLearn is a e-learning website or online learning platform is a full responsive website where student or trainer depending on the role, if he/she is a student he/she can buy the course and start the course and if he/she is a trainer he/she will have three functionalities like AddLesson, AddCourse & View Course. Student also fetch the details of the course and lessons by simply type the lessonId and start learning. While studing if student get any doubt he/she put a comment in the comment section
 
