@@ -34,11 +34,6 @@ public class NavController
 		return "login";
 	}
 	
-	@GetMapping("/home")
-	public String home()
-	{
-		return "home";
-	}
 	
 	@GetMapping("/createCourse")
 	public String createCourse()
